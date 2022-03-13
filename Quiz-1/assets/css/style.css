@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
+    font-size: 22px;
+}
+
+/* Buatlah styling setiap section dibawah ini */
+.container {
+    width: 780px;
+    margin: 0 auto;
+}
+
+/* Container Hero */
+.container_hero {
+    display: flex;
+    color: #FFFFFF;
+    background-color: #146356;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 0.5em 0.5em;
+}
+
+.container_hero h1 {
+    flex-basis: 65%;
+}
+
+.container_hero p {
+    flex-basis: 35%;
+    font-size: 14px;
+    text-align: end;
+}
+
+/* Container Bottom */
+.container_bottom {
+    margin: auto 0.5em;
+}
+
+.container_bottom p {
+    font-size: 14px;
+}
+
+.container_bottom a {
+    margin-left: 15px;
+}
+
+.container_bottom button {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    font-size: 14px;
+    padding: 4px 10px;
+}
+
+/* Container Support */
+.container_support {
+    margin: 3em 0.5em 1em 0.5em;
+    width: 100%;
+}
+
+.container_support p {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container_support .logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_support .logo img {
+    margin: auto;
+    width: 10%;
+}
+
+/* Container Features */
+.container_features_title {
+    display: inline-block;
+    margin: 4em 0.5em 1em 0.5em;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #000000;
+}
+
+.container_features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    margin: auto 0.5em;
+}
+
+.container_features .container_features-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container_features .container_features-card h3 {
+    margin: 2em auto;
+    flex-basis: 50%;
+}
+
+.container_features .container_features-card p {
+    font-size: 10px;
+    flex-basis: 50%;
+}
+
+/* Container Pricing */
+.container_pricing_title {
+    display: inline-block;
+    margin: 4em 0.5em 3em 0.5em;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #000000;
+}
+
+.container_pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    background-color: #21313A;
+    padding: 1.5em 3em;
+    margin: auto 0.5em;
+}
+
+.container_pricing .container_pricing-card {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 1em 0.5em;
+    text-align: center;
+}
+
+.container_pricing .container_pricing-card small {
+    font-size: 10px;
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+
+.container_pricing .container_pricing-card ul li {
+    font-size: 10px;
+    text-align: start;
+}
+
+/* Aturlah breakpoint dibawah ini menggunakan media queries agar responsive dibawah sini*/
+
+@media only screen and (max-width: 480px){
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+    }
+
+    /* Container Hero */
+    .container_hero {
+        display: inline-block;
+        margin: 0.5em 1em;
+    }
+
+    /* Container Bottom */
+    .container_bottom {
+        margin-right: auto;
+        margin-left: 1em;
+    }
+
+    .container_bottom a {
+        margin-left: 0px;
+    }
+
+    /* Container Support */
+    .container_support .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .container_support .logo img {
+        width: 25%;
+        margin: 2em auto;
+    }
+
+    /* Container Features */
+    .container_features {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        margin: auto 3em;
+    }
+
+    /* Container Pricing */
+    .container_pricing {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        margin: auto 1em;
+    }
+}
+
+@media only screen and (min-width: 480px) and ( max-width: 780px ){
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+    }
+
+    /* Container Hero */
+    .container_hero {
+        display: inline-block;
+        margin: 0.5em 1.5em;
+    }
+
+    /* Container Bottom */
+    .container_bottom {
+        margin-right: auto;
+        margin-left: 1.5em;
+    }
+
+    .container_bottom a {
+        margin-left: 0px;
+    }
+
+    /* Container Support */
+    .container_support .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .container_support .logo img {
+        width: 15%;
+        margin: 2em auto;
+    }
+
+    /* Container Features */
+    .container_features {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 70px;
+        margin: auto 1.5em;
+    }
+
+    /* Container Pricing */
+    .container_pricing {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        margin: auto 1.5em;
+    }
+}
