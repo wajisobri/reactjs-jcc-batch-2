@@ -61,7 +61,7 @@ while(i <= 20) {
 }
 console.log("LOOPING KEDUA");
 for(var i=20; i>=2; i-=2) {
-    console.log(`${i} - I love coding`);
+    console.log(`${i} - I will become a frontend developer`);
 }
 
 
