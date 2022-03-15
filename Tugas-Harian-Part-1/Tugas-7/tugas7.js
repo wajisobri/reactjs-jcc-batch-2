@@ -9,19 +9,19 @@ console.log(output);
 console.log("----------------------------");
 // soal 2
 let array1 = ["selamat", "anda", "melakukan", "perulangan", "array", "dengan", "for"];
-array1.forEach(function(item) {
-    console.log(item);
-});
+for(let i=0; i<array1.length; i++) {
+    console.log(array1[i]);
+}
 
 
 console.log("----------------------------");
 // soal 3
 let array2 = [1, 2, 3, 4, 5, 6,7, 8, 9, 10];
-array2.forEach(function(item) {
-    if(item % 2 == 0) {
-        console.log(item);
+for(let i=0; i<array2.length; i++) {
+    if(array2[i] % 2 == 0) {
+        console.log(array2[i]);
     }
-});
+}
 
 
 console.log("----------------------------");
@@ -44,6 +44,6 @@ sayuran.push("Seledri");
 sayuran.push("Tauge");
 
 sayuran.sort();
-sayuran.forEach(function(item, index) {
-    console.log(`${parseInt(index)+1}. ${item}`);
-});
+for(let i=0; i<sayuran.length; i++) {
+    console.log(`${i+1}. ${sayuran[i]}`);
+}
