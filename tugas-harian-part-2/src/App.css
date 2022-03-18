@@ -58,3 +58,7 @@
   padding: 20px 0;
   font-size: 15px;
 }
+
+.box .button:active {
+  background-color: red;
+}
