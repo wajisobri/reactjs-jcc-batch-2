@@ -1,0 +1,48 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.table-daftar-buah {
+    width: 85%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table-daftar-buah thead td {
+    font-weight: bold;
+}
+
+.table-daftar-buah td {
+    border-bottom: 1px solid lightgray;
+    padding: 5px 15px 5px 5px;
+}
+
+.table-daftar-buah td button:first-child {
+    margin-right: 5px;
+}
+
+.input-form {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 5px 20px;
+}
+
+.input-form tr {
+    display: inline-block;
+    width: 100%;
+}
+
+.input-form tr td {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.input-form tr td:first-child {
+    font-weight: bold;
+}

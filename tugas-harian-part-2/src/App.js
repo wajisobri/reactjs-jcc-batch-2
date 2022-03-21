@@ -1,29 +1,13 @@
 import './App.css';
-import TodoItem from './TodoItem';
+import Tugas11 from './Tugas-11/Tugas11';
 
 function App() {
-  return (
-    <div className="App">
-      <div className="box">
-        <img src="./logo.png" className="logo" alt="Logo JabarCodingCamp" />
-        <div className="Header">
-          <h1>THINGS TO DO</h1>
-          <small>During Bootcamp in Jabarcodingcamp</small>
-          <hr />
+    return (
+        <div className="App">
+            {/* <Tugas10 /> */}
+            <Tugas11 />
         </div>
-        <div className="Todo">
-          <ul>
-            <TodoItem title="Belajar Git & HTML" />
-            <TodoItem title="Belajar HTML & CSS" />
-            <TodoItem title="Belajar Javascript" />
-            <TodoItem title="Belajar ReactJS Dasar" />
-            <TodoItem title="Belajar ReactJS Advance" />
-          </ul>
-          <button type="button" className="button">Send</button>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default App;
