@@ -1,0 +1,141 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.table-daftar-nilai {
+    width: 65%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table-daftar-nilai thead td {
+    font-weight: bold;
+}
+
+.table-daftar-nilai td {
+    border-bottom: 1px solid lightgray;
+    padding: 5px 15px 5px 5px;
+}
+
+.table-daftar-nilai td button:first-child {
+    margin-right: 5px;
+}
+
+.input-form {
+    width: 65%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 5px 20px;
+}
+
+.input-form tr {
+    display: inline-block;
+    width: 100%;
+}
+
+.input-form tr td {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.input-form tr td:first-child {
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+}
+
+.form {
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
+
+.form button {
+    padding: 5px;
+    font-size: medium;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.form button:hover {
+    background-color: #444344;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.switch button {
+    padding: 10px;
+    font-size: medium;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.switch button:hover {
+    background-color: #444344;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    width: 80%;
+    margin: 0;
+}
+
+ul li{
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.light-mode {
+    background-color: lightgrey;
+}
+
+.light-mode ul li a {
+    color: #000;
+}
+
+.light-mode ul li:hover {
+    background-color: #444344;
+}
+
+.light-mode ul li:hover a {
+    color: #fff;
+}
+
+.dark-mode {
+    background-color: #444344;
+}
+
+.dark-mode ul li:hover {
+    background-color: #fff;
+}
+
+.dark-mode ul li a {
+    color: #fff;
+}
+
+.dark-mode ul li:hover a {
+    color: #444344;
+}
