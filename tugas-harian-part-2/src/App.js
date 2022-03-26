@@ -1,8 +1,9 @@
 import './App.css';
+import Tugas15 from './Tugas-15/Tugas15';
 // import Tugas11 from './Tugas-11/Tugas11';
 // import Tugas12 from './Tugas-12/Tugas12';
 // import Tugas13 from './Tugas-13/Tugas13';
-import Tugas14 from './Tugas-14/Tugas14';
+// import Tugas14 from './Tugas-14/Tugas14';
 
 function App() {
     return (
@@ -11,7 +12,8 @@ function App() {
             {/* <Tugas11 /> */}
             {/* <Tugas12 /> */}
             {/* <Tugas13 /> */}
-            <Tugas14 />
+            {/* <Tugas14 /> */}
+            <Tugas15 />
         </div>
     );
 }
