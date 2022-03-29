@@ -2,14 +2,15 @@ import axios from 'axios'
 import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { Tugas14Context } from '../Tugas-14/Tugas14Context'
+import { AppContext } from '../Context/AppContext'
+// import { Tugas14Context } from '../Tugas-14/Tugas14Context'
 
 export const Tugas15Form = (props) => {
     let history = useHistory();
-    const {daftarNilai, setDaftarNilai} = useContext(Tugas14Context)
-    const {inputNilai, setInputNilai} = useContext(Tugas14Context)
-    const {currentId, setCurrentId} = useContext(Tugas14Context)
-    const {setActionMessage} = useContext(Tugas14Context)
+    const {daftarNilai, setDaftarNilai} = useContext(AppContext)
+    const {inputNilai, setInputNilai} = useContext(AppContext)
+    const {currentId, setCurrentId} = useContext(AppContext)
+    const {setActionMessage} = useContext(AppContext)
 
     const formValidation = () => (
         (inputNilai.name !== "" && inputNilai.course !== "") && (parseInt(inputNilai.score) >= 0 && parseInt(inputNilai.score) <= 100)

@@ -1,14 +1,15 @@
 import axios from 'axios'
 import React, { useContext, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Tugas14Context } from '../Tugas-14/Tugas14Context'
+import { AppContext } from '../Context/AppContext'
+// import { Tugas14Context } from '../Tugas-14/Tugas14Context'
 
 export const Tugas15List = (props) => {
     let history = useHistory();
-    const {daftarNilai, setDaftarNilai} = useContext(Tugas14Context)
-    const {setInputNilai} = useContext(Tugas14Context)
-    const {setCurrentId} = useContext(Tugas14Context)
-    const {actionMessage, setActionMessage} = useContext(Tugas14Context)
+    const {daftarNilai, setDaftarNilai} = useContext(AppContext)
+    const {setInputNilai} = useContext(AppContext)
+    const {setCurrentId} = useContext(AppContext)
+    const {actionMessage, setActionMessage} = useContext(AppContext)
 
     const actionClass = actionMessage.type === "Green" ? "bg-green-200 border-green-600 text-green-600" : "bg-red-200 border-red-600 text-red-600"
 

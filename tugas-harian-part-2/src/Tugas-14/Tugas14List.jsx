@@ -2,13 +2,14 @@ import axios from 'axios'
 import React, { useContext, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { Tugas14Context } from './Tugas14Context'
+import { AppContext } from '../Context/AppContext'
+// import { Tugas14Context } from './Tugas14Context'
 
 export const Tugas14List = (props) => {
     let history = useHistory();
-    const {daftarNilai, setDaftarNilai} = useContext(Tugas14Context)
-    const {setInputNilai} = useContext(Tugas14Context)
-    const {setCurrentId} = useContext(Tugas14Context)
+    const {daftarNilai, setDaftarNilai} = useContext(AppContext)
+    const {setInputNilai} = useContext(AppContext)
+    const {setCurrentId} = useContext(AppContext)
 
     const handleDelete = (event) => {
         const ID_STUDENT = parseInt(event.target.value)

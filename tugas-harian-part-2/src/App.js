@@ -1,5 +1,6 @@
 import './App.css';
-import Tugas15 from './Tugas-15/Tugas15';
+import { AppRoutes } from './Routes/AppRoutes';
+// import Tugas15 from './Tugas-15/Tugas15';
 // import Tugas11 from './Tugas-11/Tugas11';
 // import Tugas12 from './Tugas-12/Tugas12';
 // import Tugas13 from './Tugas-13/Tugas13';
@@ -13,7 +14,8 @@ function App() {
             {/* <Tugas12 /> */}
             {/* <Tugas13 /> */}
             {/* <Tugas14 /> */}
-            <Tugas15 />
+            {/* <Tugas15 /> */}
+            <AppRoutes />
         </div>
     );
 }
