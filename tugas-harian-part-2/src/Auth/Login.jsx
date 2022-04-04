@@ -12,17 +12,15 @@ export const Login = () => {
     const { setIsLogin } = useContext(AppContext)
 
     const afterLogin = (dest) => {
-        history.push(dest)
-        setInputAuth({
-            name: "",
-            email : "",
-            password : ""
-        })
-    }
-
-    const formValidation = () => (
-        (inputAuth.email !== "" && inputAuth.password !== "")
-    )
+      history.push(dest);
+      setInputAuth({
+        name: "",
+        email: "",
+        password: "",
+      });
+    };
+      
+    const formValidation = () => inputAuth.email !== "" && inputAuth.password !== ""
 
     const handleSubmit = (event) => {
         event.preventDefault()
